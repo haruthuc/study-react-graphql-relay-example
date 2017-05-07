@@ -1,0 +1,53 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "Simple GraphQL server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p --progress --colors"
+  },
+  "author": "Thuc Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^2.10.0",
+    "assert": "^1.4.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-relay-plugin": "^0.11.0",
+    "compression": "^1.6.2",
+    "css-loader": "^0.28.1",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "graphql": "^0.9.3",
+    "graphql-relay": "^0.5.1",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.26",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-addons-update": "^15.5.2",
+    "react-dnd": "^2.3.0",
+    "react-dnd-html5-backend": "^1.0.0",
+    "react-dom": "^15.5.4",
+    "react-relay": "^0.10.0",
+    "relay-mongodb-connection": "^2.1.0",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.1.1",
+    "compression-webpack-plugin": "^0.4.0",
+    "webpack-bundle-analyzer": "^2.6.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "passPerPreset": true,
+  "plugins": [
+        ["import", { "libraryName": "antd", "style": "css" }] // `style: true` for less
+  ],
+  "presets": [
+    {"plugins": ["./babelRelayPlugin"]},
+    "react",
+    "es2015",
+    "stage-0"
+  ]
+}

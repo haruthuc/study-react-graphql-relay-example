@@ -1,0 +1,39 @@
+.custom-image {
+  float: left;
+  width: 140px;
+}
+.custom-image img {
+  display: block;
+  padding: 5px;
+  width: 134px;
+  height: 193px;
+  float: left;
+}
+.custom-card {
+  padding: 10px 16px;
+  float: left;
+  width: 800px;
+}
+.custom-card p {
+  color: #999;
+  float: left;
+  max-height: 200px;
+  text-align: justify;
+}
+.ant-tag {
+  margin-bottom: 8px;
+}
+.btn-loadmore{
+  font-size: 18px;
+  color:#108ee9;
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  float: left;
+  margin-left: 10px;
+}
+.btn-loadmore:hover{
+  color:red;
+}
