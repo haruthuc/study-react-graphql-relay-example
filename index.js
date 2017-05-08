@@ -8,7 +8,7 @@ const path = require('path');
 const {introspectionQuery} = require('graphql/utilities');
 
 const mySchema = require('./schema/main.js');
-const MONGO_URL = 'mongodb://localhost:27017/fshare';  //'mongodb://admin:admin123@ds133291.mlab.com:33291/fshare'; 
+const MONGO_URL = 'mongodb://admin:admin123@ds133291.mlab.com:33291/fshare'; //'mongodb://localhost:27017/fshare'; 
 const graphqlHTTP = require('express-graphql');
 const express = require('express');
 const app = express();
