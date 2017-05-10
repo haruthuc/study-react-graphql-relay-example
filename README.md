@@ -5,10 +5,17 @@ This project for learning: GraphQL, Relay, Reactjs + ant-design + MongoDB.
 ## To Start this Example:
 ```
 npm install
-webpack
-node index.js
 ```
-After start: try
+To build
+```
+npm run build
+```
+To Start
+```
+npm start
+```
+
+After start see demo at:
 ```
  http://localhost:3001
 ```
