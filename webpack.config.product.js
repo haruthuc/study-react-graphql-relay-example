@@ -17,10 +17,21 @@ var config = {
             'NODE_ENV': JSON.stringify('production')
         }
     }),
-     new ExtractTextPlugin( "styles.css" ),
-   
-    new webpack.optimize.DedupePlugin(), //dedupe similar code 
-    new webpack.optimize.UglifyJsPlugin(), //minify everything
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      mangle: {
+        screw_ie8: true,
+        keep_fnames: true
+      },
+      compress: {
+        screw_ie8: true
+      },
+      comments: false
+    }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new CompressionPlugin({ 
       asset: "[path].gz[query]",
@@ -28,7 +39,8 @@ var config = {
       test: /\.js$|\.css$|\.html$/,
       threshold: 10240,
       minRatio: 0.8
-    })
+    }),
+   new ExtractTextPlugin( "styles.css" )
   ],
   module: {
     loaders: [{
