@@ -13,6 +13,7 @@ const MONGO_URL = 'mongodb://admin:admin123@ds133291.mlab.com:33291/fshare'; //'
 const graphqlHTTP = require('express-graphql');
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3001;
 
 MongoClient.connect(MONGO_URL,(err,db)=>{
     assert.equal(null,err);
@@ -35,7 +36,7 @@ MongoClient.connect(MONGO_URL,(err,db)=>{
         }
     ).catch(console.error);
 
-    app.listen(3001,()=> console.log("Running Express.js on port 3000"));
+    app.listen(port,()=> console.log("Running Express.js on port "+port));
 });
 
 
